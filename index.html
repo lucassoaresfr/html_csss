@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        *, html, body {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #container {
+            display: flex;
+            justify-content: center; /* Alinha horizontalmente */
+            align-items: center;     /* Alinha verticalmente */
+            height: 100vh;           /* Preenche toda a altura da janela */
+        }
+
+        #centralizada {
+            width: 300px;            /* Largura da div centralizada */
+            padding: 20px;
+            background-color: lightblue;
+            text-align: center;
+        }
+
+        .cabeçalho {
+            width: 300px;
+            border: solid black;
+            border-radius: 10px;
+            padding: 5px;
+            font-size: 25px;
+            margin-bottom: 14px;
+        }
+
+        .formulario{
+            display: flex;
+            flex-direction: column;
+            margin-top: 14px ;
+        }
+
+        .formulario h2 {
+            margin-bottom: 14px ;
+        }
+        .formulario input {
+            width: 300px;
+            margin-top: 5px;  
+            margin-bottom: 5px;  
+        }
+        .users {
+            display: flex;
+            flex-direction: column;
+            margin-top: 14px ;
+        }
+        .users button {
+            width: 70px;
+            margin-top: 6px;
+            margin-bottom: 6px;
+        }
+        .conteiner_op{
+            margin-top: 7px;
+        }
+        .op {
+             display: flex;
+            flex-direction: column;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <div id="centralizada">
+    <div class="cabeçalho">
+        <h1>Emprenda+</h1>
+        <p>Venha empreender</p>
+    </div>
+    <div class="formulario">
+        <h2>Cadastro do empreendedor:</h2>
+        <label for="nome">Nome:</label>
+        <input type="text" placeholder="Digite seu nome">
+        <label for="cnpj">CNPJ::</label>
+        <input type="text" placeholder="Digite seu cnpj">
+        <label for="instagram">Instagram</label>
+        <input type="text" placeholder="Digite seu instagram">
+    </div>
+    <div class="users">
+        <h2>Conheça nossos usuarios</h2>
+        <label for="Icaro"><i class="fa fa-user"></i> Icaro</label>
+        <button>Conhecer</button>
+        <label for="Leidy"><i class="fa fa-user"></i> Leidy</label>
+        <button>Conhecer</button>
+        <label for="Gabriel"><i class="fa fa-user"></i> Gabriel</label>
+        <button>Conhecer</button>
+        <label for="Lucas"><i class="fa fa-user"></i> Lucas</label>
+        <button>Conhecer</button>
+    </div>
+    <div class="conteiner_op">
+        <h2 class="op">Oportunidades:</h2>     
+        <p class="op">Se existem varias formas de encontrar um finaciamento para sua empresa e conseguir um emprestimo. Aqui vai de alguns bancos:</p>   
+        <label for="caixa" class="op">Caixa economica federal</label>
+        <a href="https://www.caixa.gov.br/empresa/credito-financiamento/Paginas/default.aspx" class="op">Caixa</a>
+        <label for="caixa" class="op">Banco nacional do desenvolvimento (BNDES)</label>
+        <a href="https://www.bndes.gov.br/wps/portal/site/home/financiamento/produto/bndes-credito-pequenas-e-medias-empresas" class="op">BNDES</a>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
