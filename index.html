@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
     <style>
         *, html, body {
             margin: 0px;
-            padding: 0px;
+            padding: 0px;   
             font-family: Arial, Helvetica, sans-serif;
         }
 
@@ -20,10 +20,11 @@
         }
 
         #centralizada {
-            width: 300px;            /* Largura da div centralizada */
-            padding: 20px;
+            width: 500px;            /* Largura da div centralizada */
+            padding: 25px;
             background-color: lightblue;
             text-align: center;
+            border-radius: 5px;
         }
 
         .cabeçalho {
@@ -33,6 +34,7 @@
             padding: 5px;
             font-size: 25px;
             margin-bottom: 14px;
+            margin-left: 95px;
         }
 
         .formulario{
@@ -48,26 +50,60 @@
             width: 300px;
             margin-top: 5px;  
             margin-bottom: 5px;  
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .formulario button{
+            width: 70px;
+            margin-left: 220px;
+            margin-top: 5px;
+        }
+        .users button:hover {
+            width: 70px;
+            margin-top: 6px;
+            margin-bottom: 6px;
+            margin-left: 215px;
+            padding: 2px;
+            background-color: black;
+            color: white;
+            border-radius: 3px;
         }
         .users {
             display: flex;
             flex-direction: column;
-            margin-top: 14px ;
+            margin-top: 20px ;
+            text-align: center;
         }
         .users button {
             width: 70px;
             margin-top: 6px;
             margin-bottom: 6px;
+            margin-left: 215px;
+        }
+        .users button:hover {
+            width: 70px;
+            margin-top: 6px;
+            margin-bottom: 6px;
+            margin-left: 215px;
+            padding: 2px;
+            background-color: black;
+            color: white;
+            border-radius: 3px;
         }
         .conteiner_op{
-            margin-top: 7px;
+            margin-top: 15px;
         }
         .op {
              display: flex;
             flex-direction: column;
             margin-top: 8px;
             margin-bottom: 8px;
+            text-decoration: none;
         }
+        input{
+            margin-left: 100px;
+        }
+        
     </style>
 
 </head>
@@ -80,30 +116,31 @@
     </div>
     <div class="formulario">
         <h2>Cadastro do empreendedor:</h2>
-        <label for="nome">Nome:</label>
+        <label for="nome">NOME:</label>
         <input type="text" placeholder="Digite seu nome">
-        <label for="cnpj">CNPJ::</label>
+        <label for="cnpj">CNPJ:</label>
         <input type="text" placeholder="Digite seu cnpj">
-        <label for="instagram">Instagram</label>
+        <label for="instagram">INSTAGRAM</label>
         <input type="text" placeholder="Digite seu instagram">
+        <button>Cadastrar</button>
     </div>
     <div class="users">
-        <h2>Conheça nossos usuarios</h2>
+        <h2>Conheça nossos usuarios</h2><br>
         <label for="Icaro"><i class="fa fa-user"></i> Icaro</label>
-        <button>Conhecer</button>
+        <button>Conhecer</button><br>
         <label for="Leidy"><i class="fa fa-user"></i> Leidy</label>
-        <button>Conhecer</button>
+        <button>Conhecer</button><br>
         <label for="Gabriel"><i class="fa fa-user"></i> Gabriel</label>
-        <button>Conhecer</button>
+        <button>Conhecer</button><br>
         <label for="Lucas"><i class="fa fa-user"></i> Lucas</label>
-        <button>Conhecer</button>
+        <button>Conhecer</button><br>
     </div>
     <div class="conteiner_op">
-        <h2 class="op">Oportunidades:</h2>     
-        <p class="op">Se existem varias formas de encontrar um finaciamento para sua empresa e conseguir um emprestimo. Aqui vai de alguns bancos:</p>   
-        <label for="caixa" class="op">Caixa economica federal</label>
+        <h2 class="op1">Oportunidades:</h2>     
+        <p class="op1">Se existem varias formas de encontrar um finaciamento para sua empresa e conseguir um emprestimo. Aqui vai de alguns bancos:</p>   
+        <label for="caixa" class="op1">Caixa economica federal</label>
         <a href="https://www.caixa.gov.br/empresa/credito-financiamento/Paginas/default.aspx" class="op">Caixa</a>
-        <label for="caixa" class="op">Banco nacional do desenvolvimento (BNDES)</label>
+        <label for="caixa" class="op1">Banco nacional do desenvolvimento (BNDES)</label>
         <a href="https://www.bndes.gov.br/wps/portal/site/home/financiamento/produto/bndes-credito-pequenas-e-medias-empresas" class="op">BNDES</a>
 
         </div>
