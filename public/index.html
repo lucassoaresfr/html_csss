@@ -51,7 +51,7 @@
             margin-top: 5px;  
             margin-bottom: 5px;  
             padding: 5px;
-            border-radius: 5px;
+            border-radius: 5px; margin-right: 90px;
         }
         .formulario button{
             width: 70px;
@@ -103,6 +103,27 @@
         input{
             margin-left: 100px;
         }
+
+        .link{
+            text-decoration: none;
+            color: black;
+            background-color: white;
+            margin-right: 205px;
+            margin-left: 205px;
+            border-radius: 5px;
+            padding: 4px;
+        }
+
+        .button-formulario{
+            color: white;
+            margin-right: 210px;
+            padding: 5px 5px 5px 5px;
+            background-color: green;
+            border: none;
+            border-radius: 5px;
+        }
+        
+        
         
     </style>
 
@@ -115,25 +136,65 @@
         <p>Venha empreender</p>
     </div>
     <div class="formulario">
-        <h2>Cadastro do empreendedor:</h2>
-        <label for="nome">NOME:</label>
-        <input type="text" placeholder="Digite seu nome">
-        <label for="cnpj">CNPJ:</label>
-        <input type="text" placeholder="Digite seu cnpj">
-        <label for="instagram">INSTAGRAM</label>
-        <input type="text" placeholder="Digite seu instagram">
-        <button>Cadastrar</button>
+        <form id="meuFormulario">
+
+            <label for="nome">Nome:</label>
+            <input type="text" placeholder="Digite Seu nome" id="nome" name="nome" required><br><br>
+            
+                <label for="email">E-mail:</label>
+                <input type="email" placeholder="Digite seu Email" id="email" name="email" required><br><br>
+
+
+                <label for="Instagram">Instagram:</label>
+                <input type="text" placeholder="@" id="Instagram" name="Instagram" required><br><br>
+
+                <label for="CNPJ">CNPJ</label>
+                <input type="text" placeholder="Digite Seu CNPJ" id="CNPJ" name="CNPJ" required><br><br>
+            
+            <button class="button-formulario" type="button" onclick="enviarFormulario()">Enviar</button>
+          </form>
+
+          <script>
+            // Função JavaScript que envia o formulário
+            function enviarFormulario() {
+              // Obtém o formulário pelo ID
+              var formulario = document.getElementById("meuFormulario");
+        
+              // Verifica se o formulário é válido
+              if (formulario.checkValidity()) {
+                // Aqui, você pode processar o envio (por exemplo, com AJAX)
+                // Vou apenas mostrar uma mensagem de sucesso por enquanto.
+                alert("Formulário enviado com sucesso!");
+        
+                // Aqui, você pode realmente submeter o formulário se necessário:
+                // formulario.submit(); // Se quiser realmente enviar o formulário
+              } else {
+                // Caso o formulário não seja válido, mostra um erro
+                alert("Por favor, preencha todos os campos obrigatórios!");
+              }
+            }
+          </script>
+
     </div>
     <div class="users">
         <h2>Conheça nossos usuarios</h2><br>
-        <label for="Icaro"><i class="fa fa-user"></i> Icaro</label>
-        <button>Conhecer</button><br>
-        <label for="Leidy"><i class="fa fa-user"></i> Leidy</label>
-        <button>Conhecer</button><br>
-        <label for="Gabriel"><i class="fa fa-user"></i> Gabriel</label>
-        <button>Conhecer</button><br>
-        <label for="Lucas"><i class="fa fa-user"></i> Lucas</label>
-        <button>Conhecer</button><br>
+
+        <label for="Icaro"><i class="fa fa-user"></i> Icaro</label><br>
+        
+        <a href="usuario1.html" class="link" >Conhecer</a> <br>
+
+        <label for="Leidy"><i class="fa fa-user"></i> Leidy</label><br>
+        
+        <a href="usuario2.html" class="link" >Conhecer</a> <br>
+
+        <label for="Gabriel"><i class="fa fa-user"></i> Gabriel</label><br>
+
+        <a href="usuario3.html" class="link" >Conhecer</a> <br>
+
+        <label for="Lucas"><i class="fa fa-user"></i> Lucas</label><br>
+
+        <a href="usuario4.html" class="link" >Conhecer</a> <br>
+        
     </div>
     <div class="conteiner_op">
         <h2 class="op1">Oportunidades:</h2>     
